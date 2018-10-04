@@ -41,4 +41,8 @@ public class FractionTest {
         assertTrue(new Fraction(4, 2).isImpropia());
         assertFalse(this.fraction.isImpropia());
     }
+    @Test
+    void testtoDecimal() {
+        assertEquals(0.5, this.fraction.decimal(), 10e-5);
+    }
 }
