@@ -61,5 +61,8 @@ public class Fraction {
     public boolean isImpropia() {
         return numerator > denominator;
     }
+
+    public double toDecimal(){return (double) numerator / denominator;}
+
 }
 
