@@ -51,5 +51,20 @@ public class DecimalCollection {
         return higher;
     }
 
+    public double lowestDecimal() {
+        assert collection != null;
+        if (this.collection.isEmpty()) {
+            throw new ArithmeticException("Empty collection");
+        }
+        double lowest = Double.POSITIVE_INFINITY;
+        for (double item : this.collection) {
+            if (item < lowest) {
+                lowest = item;
+            }
+        }
+        return lowest;
+    }
+
+
 }
 
