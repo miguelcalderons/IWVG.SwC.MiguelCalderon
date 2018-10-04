@@ -42,7 +42,7 @@ public class FractionTest {
         assertFalse(this.fraction.isImpropia());
     }
     @Test
-    void testtoDecimal() {
-        assertEquals(0.5, this.fraction.decimal(), 10e-5);
+    void testtoPercentage() {
+        assertEquals(50.0, this.fraction.toPercentage(), 10e-5);
     }
 }

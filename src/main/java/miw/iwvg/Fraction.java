@@ -62,7 +62,7 @@ public class Fraction {
         return numerator > denominator;
     }
 
-    public double toDecimal(){return (double) numerator / denominator;}
+    public double toPercentage(){return (double) (numerator*100) / denominator;}
 
 }
 
