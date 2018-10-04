@@ -10,12 +10,12 @@ public class UserTest {
 
     @BeforeEach
     void before() {
-        this.user = new User(1,"Juan","Perez");
+        this.user = new User(1, "Juan", "Perez");
     }
 
     @Test
     void testFullName() {
-        assertEquals("Juan Perez",user.fullName());
+        assertEquals("Juan Perez", user.fullName());
     }
 
     @Test
@@ -31,5 +31,10 @@ public class UserTest {
     @Test
     void testGetNumber() {
         assertEquals(1, user.getNumber());
+    }
+
+    @Test
+    void testCapitalizeName() {
+        assertEquals("JUAN", this.user.capitalizeName());
     }
 }
