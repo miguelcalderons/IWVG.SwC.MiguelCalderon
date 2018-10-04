@@ -12,7 +12,7 @@ public class FractionTest {
 
     @BeforeEach
     void before() {
-        this.fraction = new Fraction(2,4);
+        this.fraction = new Fraction(2, 4);
     }
 
     @Test
@@ -22,17 +22,23 @@ public class FractionTest {
 
     @Test
     void testGetNumerator() {
-        assertEquals(2,this.fraction.getNumerator());
+        assertEquals(2, this.fraction.getNumerator());
     }
 
     @Test
     void testGetDenominator() {
-        assertEquals(4,this.fraction.getDenominator());
+        assertEquals(4, this.fraction.getDenominator());
     }
 
     @Test
-    void testIsPropia(){
+    void testIsPropia() {
         assertTrue(this.fraction.isPropia());
-        assertFalse(new Fraction(4,3).isPropia());
+        assertFalse(new Fraction(4, 3).isPropia());
+    }
+
+    @Test
+    void testIsImpropia() {
+        assertTrue(new Fraction(4, 2).isImpropia());
+        assertFalse(this.fraction.isImpropia());
     }
 }
