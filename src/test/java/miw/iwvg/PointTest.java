@@ -50,4 +50,10 @@ class PointTest {
         assertEquals(2, point.getY());
     }
 
+    @Test
+    void testModPoint(){
+        point.modPoint(5, 7);
+        assertEquals(5, point.getX());
+        assertEquals(7, point.getY());
+    }
 }

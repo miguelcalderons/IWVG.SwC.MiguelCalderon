@@ -54,5 +54,15 @@ public class Fraction {
         return denominator;
     }
 
+    public boolean isPropia() {
+        return numerator < denominator;
+    }
+
+    public boolean isImpropia() {
+        return numerator > denominator;
+    }
+
+    public double toPercentage(){return (double) (numerator*100) / denominator;}
+
 }
 
