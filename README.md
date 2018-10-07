@@ -8,7 +8,7 @@
 
 [![Build Status](https://travis-ci.org/miguelcalderons/IWVG.SwC.MiguelCalderon.svg?branch=develop)](https://travis-ci.org/miguelcalderons/IWVG.SwC.MiguelCalderon)
 
-![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=IWVG.SwC.MiguelCalderon&metric=alert_status)
+![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=IWVG.SwC%3AMiguelCalderon&metric=alert_status)
 
 ###Master
 
