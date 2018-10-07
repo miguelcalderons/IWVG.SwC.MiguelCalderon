@@ -47,4 +47,10 @@ public class Point {
                 ", y=" + y +
                 '}';
     }
+
+    public void modPoint(int x, int y){
+        this.x = x;
+        this.y = y;
+
+    }
 }
